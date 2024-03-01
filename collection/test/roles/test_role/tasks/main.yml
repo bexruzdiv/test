@@ -1,0 +1,5 @@
+---
+- name: Create hello.py file
+  ansible.builtin.file:
+    path: /root/hello.py  # Specify the path where you want to create the file
+    state: touch
