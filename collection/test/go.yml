@@ -1,6 +1,6 @@
 ---
 - name: Backup from vault cluster
-  hosts: 65.108.148.117
+  hosts: localhost
   gather_facts: True
   become: True
   vars:
