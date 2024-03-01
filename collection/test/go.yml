@@ -3,6 +3,8 @@
   hosts: 65.108.148.117
   gather_facts: True
   become: True
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
   environment:
     ANSIBLE_HOST_KEY_CHECKING: "False"  # Disable host key checking
   roles:
