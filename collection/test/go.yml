@@ -1,7 +1,9 @@
-
+---
 - name: Backup from vault cluster
   hosts: 65.108.148.117
   gather_facts: True
   become: True
+  environment:
+    ANSIBLE_HOST_KEY_CHECKING: "False"  # Disable host key checking
   roles:
     - role: roles/test_role
